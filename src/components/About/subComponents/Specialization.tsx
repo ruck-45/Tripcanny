@@ -1,21 +1,21 @@
 import React from 'react'
 
-import ppo from './assets/pc_layout.png'
+import ppo from './assets/yelowcar.jpg'
 
 const Specialization = () => {
   return (
-    <div  className='bg-white lg:h-[35rem] md:h-[50rem] sm:h-[70rem] flex md:flex-row flex-col items-center justify-between border-black'>
+    <div  className='bg-white h-auto md:h-[40rem] flex md:flex-row flex-col items-center justify-between border-black'>
       
-        <div className='w-[43em] p-[5rem] h-[25rem]'>
-          <img src={ppo} />
+        <div className='w-[43em] md:p-[5rem] px-[2rem] h-[25rem] bg-center cover'>
+          <img className=' ' src={ppo} />
         </div>
-        <div className='p-[5rem]'>
-          <h1 className='text-3xl text-bold font-serif '>Who is Lighten</h1>
-          <p className='text-1xl text-medium  font-serif mt-[2rem]'>It has survived not only five centuries, but also the leap into <br /> electronic typesetting, remaining essentially unchanged. It was <br /> popularised in the 1960s with the release of Letraset sheets <br />containing Lorem Ipsum.
-          <br />
-          Simply dummy text of the printing and typesetting industry <br />. Lorem Ipsum has been the industry's standard dummy text ever <br />since the 1500s, when an unknown printer took a galley of type <br />and scrambled it to make a type specimenbr
-           book.
+        <div className='py-[4rem]  px-[2rem] h-auto'>
+          <h1 className='md:text-5xl  text-2xl font-large font-serif '><span className='text-yellow-400'>WHO</span> IS CarFx</h1>
+          <div className='h-[0.3rem] w-[12rem] bg-black '></div>
+          
+          <p className='text-1xl text-medium  font-serif md:mt-[2rem]'>"Welcome to CarFx, where your journey to quality,<br /> affordable pre-owned cars begins. Explore our meticulously curated inventory, <br />each vehicle meeting our high standards for reliability. <br />With transparent pricing and a commitment to customer satisfaction, <br />we make your car-buying experience smooth and enjoyable. <br /> Find your perfect ride with confidence at CarFx."
           </p>
+          
         </div>
       </div>
     

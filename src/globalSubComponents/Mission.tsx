@@ -99,7 +99,7 @@ const Mission = () => {
           </div>
 
          <div className= 'bg-yellow-500  border-solid mt-[2rem] px-4 py-2'>
-         <button  className='text-lg font-semibold text-black'>VIEW SAMPLE REPORT</button>
+         <button  className='md:text-lg text-1xl font-bold md:font-semibold text-black'>View Sample Report</button>
          </div>
      </div>
     </div>

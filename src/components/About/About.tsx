@@ -6,6 +6,7 @@ import { updateTab } from "../../store/curTabSlice";
 import Mission from "../../globalSubComponents/Mission";
 import Specialization from "./subComponents/Specialization";
 import Intro from "../../globalSubComponents/Intro";
+import Benefit from "../Home/subComponents/Benefit";
 
 const About = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const About = () => {
     <div>
       <Intro/>
       <Specialization/>
+      <Benefit/>
       <Mission />
      
       
