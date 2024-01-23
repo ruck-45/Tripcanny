@@ -1,53 +1,36 @@
 // Local Files
-import "./Services.css";
-import ServicesCard from "./ServicesCard";
+import Card from "../../../globalSubComponents/Card";
+import shop from '../../../globalAssets/icon/shop.jpg'
+import sell from '../../../globalAssets/icon/sell.jpg'
+import finance from '../../../globalAssets/icon/finance.jpg'
+import maintaince from '../../../globalAssets/icon/maintance.jpg'
+import report from '../../../globalAssets/icon/report.jpg'
+import service1 from '../../../globalAssets/icon/service1.png'
 
-const services = [
-  {
-    heading: "Investment",
-    caption:
-      "Unlock financial growth with our investment platform. Seamlessly navigate diverse markets, make informed decisions, and watch your wealth flourish. Start your journey toward financial success today.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1613442301239-ea2478101ea7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    heading: "Crypto",
-    caption:
-      "Unlock the future of finance with our seamless cryptocurrency purchase service. Buy digital assets securely, navigate the world of blockchain effortlessly, and invest in the decentralized economy with confidence.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1634704784915-aacf363b021f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    heading: "Options",
-    caption:
-      "Options trading allows investors to buy or sell the right to purchase or sell an asset at a predetermined price within a specified timeframe, providing strategic opportunities for risk management and profit.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1651130540796-744c58fb74d1?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    heading: "Retirement",
-    caption:
-      "Unlock financial freedom with our Individual Retirement Account (IRA). Securely invest for your future, enjoy tax advantages, and tailor your retirement strategy with our user-friendly platform. Start building wealth today!",
-    thumbnail:
-      "https://images.unsplash.com/photo-1624150402111-9a54e5c2c798?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
+// const allTitle :{
+//   title1:"Fast service",
+//   title2:"Secure payments",
+//   title3:"Expert team",
+//   title4:"Affordable services",
+//   title5:"90 Days warranty",
+//   title6:"Award winning"
+// }
+
+
 
 const Services = () => {
   return (
-    <div className="service flex flex-col justify-center items-center p-[5rem] gap-[2rem]">
-      <div className="font-['Concert_one'] text-[3rem]">Our Services</div>
-      <div className="flex flex-col gap-[2rem]">
-        {services.map((data, index) => (
-          <ServicesCard
-            key={index}
-            heading={data.heading}
-            caption={data.caption}
-            thumbnail={data.thumbnail}
-            flip={index % 2 !== 0}
-          />
-        ))}
-      </div>
+    <div className="bg-white md:h-[35rem] h-[100rem] w-full ">
+      <div className="bg-white h-full  text-black md:mx-[8rem] mx-[2rem]  rounded-sm">
+       <div className=" md:grid  md:grid-cols-3 md:gap-5 flex flex-col justify-between items-center gap-2">
+         <Card photo={shop} title={"Shop Used Car"} des={"Discover a curated selection of top-notch used cars. Your dream ride awaits at unbeatable prices. Explore now!"} />
+         <Card photo={report} title={"Get Vechile Report"} des={"Gain peace of mind with our comprehensive vehicle reports. Uncover the history, condition, and reliability of your next ride. Drive confidently, choose with assurance!"} />
+         <Card photo={sell}title={"Sell Your Car"} des={"Turn your wheels into cash effortlessly! Sell your car hassle-free with us. Fast, fair, and stress-free transactions. Get your quote now!"} />
+         <Card photo={maintaince} title={"Car Maintaince"} des={"Extend the life of your vehicle with our expert car maintenance service. From routine inspections to preventive care, we keep your ride running smoothly"} />
+         <Card photo={finance} title={"Easy-Finance"} des={"Simplify your path to ownership with our easy finance solutions. Get behind the wheel hassle-free. Fast approvals, flexible terms – drive your dream car today!"} />
+         <Card photo={service1} title={"Fast Service"} des={"Experience lightning-fast service for your vehicle needs. Our skilled team ensures quick and efficient solutions, getting you back on the road in no time. Speed meets quality at [Your Business Name]."} />
+       </div>
+    </div>
     </div>
   );
 };

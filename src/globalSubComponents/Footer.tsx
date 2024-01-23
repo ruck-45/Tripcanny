@@ -52,74 +52,136 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-[5rem] bg-[rgba(0,0,0,0.5)] gap-[2rem] text-white footer">
-      <div className="flex gap-[4rem] upperFooter">
-        <div className="max-w-[20rem] flex flex-col gap-[2rem] companySection">
-          <Image width={170} src={logo} alt="logo" radius="none" />
-          <p className="text-justify">
-            Your destination for versatile investment brokerage and trading services. Our platform offers a range of
-            investment options backed by expert guidance. From novice investors to seasoned traders, we provide tailored
-            solutions to help you navigate financial markets confidently and achieve your investment objectives with
-            ease.
-          </p>
-          <div className="flex text-[1.8rem] gap-[1rem]">
-            <SiFacebook className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            <FaSquareXTwitter className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            <TbBrandYoutubeFilled className="mt-[0.4rem] cursor-pointer hover:scale-105" />
+    <div>
+      <div className=" lg:h-[25rem] md:[50rem] sm:h-[80rem] flex flex-col md:flex-col items-center justify-between bg-black text-white p-20">
+        <div className="flex flex-row items-start justify-between gap-5 p-5">
+          <div className="text-2xl">
+            <SiFacebook/>
+          </div >
+          <div className="text-2xl">
+            <SiFacebook/>
+          </div>
+          <div className="text-2xl">
+            <SiFacebook/>
+          </div>
+          <div className="text-2xl">
+            <SiFacebook/>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-[1.2rem]">
-          <div className="flex gap-[2rem] w-full justify-between contactInfo">
-            {contactInfo.map((data, index) => (
-              <div className="flex items-center  gap-[1rem]">
-                <Button isIconOnly variant="solid" radius="full" className="w-[3rem] h-[3rem] text-[1.5rem]">
-                  {data.icon}
-                </Button>
-                <div className="font-['poppins']">
-                  <h1 className="text-[#F31260] font-bold text-[1.2rem]">{data.name}</h1>
-                  <p className="text-sm">{data.value}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between md:gap-10 gap-3">
+          <div className="flex flex-col md:flex-row items-center justify-between">
 
-          <div className="w-[100%] upperDivider">
-            <Divider className="dark" />
-            <Divider className="dark" />
-          </div>
+          <div className="flex flex-col justify-between items-start md:items-center p-5">
+            <div>
+              <h1 className=" md:text-3xl text-2xl font-semibold ">CONTACT US</h1>
+            </div>
+            
+            <div className="mt-4 ">
+            <div>
+              <h1 className="text-large font-normal " >123 Second Street Fifth</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Avenue,</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Manhattan, New York</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >+987 654 3210</h1>
+            </div>
 
-          <div className="flex justify-between w-full footerLinks">
-            {footerLinks.map((ele, index) => (
-              <div className="flex flex-col gap-[1rem]">
-                <p className="font-['poppins'] text-[#F31260] font-bold text-[1.1rem]">{ele.type}</p>
-                <Listbox items={ele.data} aria-label="navigation" className="dark" variant="light">
-                  {(item) => (
-                    <ListboxItem key={item.key}>
-                      <Link to={`../${item.value}`}>{item.value}</Link>
-                    </ListboxItem>
-                  )}
-                </Listbox>
-              </div>
-            ))}
-
-            <div className="flex flex-col gap-[1rem] max-w-[13rem]">
-              <p className="font-['poppins'] text-[#F31260] font-bold text-[1.1rem]">Work Hours</p>
-              <p className="text-justify">
-                Trade and invest anytime, anywhere. Our platform is available 24/7 for seamless access to opportunities
-                and trading services.
-              </p>
             </div>
           </div>
+
+          <div className="flex flex-col justify-between items-start md:items-center p-5">
+            <div>
+              <h1 className=" md:text-3xl text-2xl font-semibold ">CONTACT US</h1>
+            </div>
+            
+            <div className="mt-4 ">
+            <div>
+              <h1 className="text-large font-normal " >123 Second Street Fifth</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Avenue,</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Manhattan, New York</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >+987 654 3210</h1>
+            </div>
+
+            </div>
+          </div>
+
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between">
+
+          <div className="flex flex-col justify-between items-start md:items-center p-5">
+            <div>
+              <h1 className=" md:text-3xl text-2xl font-semibold ">CONTACT US</h1>
+            </div>
+            
+            <div className="mt-4 ">
+            <div>
+              <h1 className="text-large font-normal " >123 Second Street Fifth</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Avenue,</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Manhattan, New York</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >+987 654 3210</h1>
+            </div>
+
+            </div>
+          </div>
+          <div className="flex flex-col justify-between items-start md:items-center p-5">
+            <div>
+              <h1 className=" md:text-3xl text-2xl font-semibold ">CONTACT US</h1>
+            </div>
+            
+            <div className="mt-4 ">
+            <div>
+              <h1 className="text-large font-normal " >123 Second Street Fifth</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Avenue,</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >Manhattan, New York</h1>
+            </div>
+            <div>
+              <h1 className="text-large font-normal" >+987 654 3210</h1>
+            </div>
+
+            </div>
+          </div>
+
+          
+
+          </div>
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
         </div>
       </div>
-      <div className="w-[100%]">
-        <Divider className="dark" />
-        <Divider className="dark" />
-        <Divider className="dark" />
-      </div>
 
-      <p>© 2023 Charl Solutions • All Rights Reserved</p>
+      <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">Copyright 2019 All Right Reserved By Free html Templates Distributed By ThemeWagon</div>
     </div>
   );
 };

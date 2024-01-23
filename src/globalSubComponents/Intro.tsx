@@ -1,27 +1,13 @@
-type IntroProps = {
-  thumbnail: string;
-  normalHead?: string;
-  redHead?: string;
-  caption: string;
-};
+import React from 'react'
 
-const Intro = (props: IntroProps) => {
+const Intro = () => {
   return (
-    <div
-      className="h-[40rem] bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.3) 20%,rgba(0,0,0,0.2)),url(${props.thumbnail})`,
-      }}
-    >
-      <div className="flex flex-col justify-center items-center w-[100%] px-[3rem] py-[2rem] bg-[rgba(0,0,0,0.5)] mt-[3rem] text-center text-[3rem] lg:text-[3.5rem] gap-[1rem]">
-        <span className="font-['kalnia'] font-bold leading-[4rem] text-[white]">
-          {props.normalHead}<span className="text-[#f31260]">{props.redHead}</span>
-        </span>
-
-        <p className="text-sm max-w-[30rem] text-default-200">{props.caption}</p>
+    <div className='h-[12rem] bg-yellow-400 flex flex-row items-center justify-center'>
+      <div>
+         <h1 className='text-bold text-4xl font-bold'>ABOUT</h1>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro

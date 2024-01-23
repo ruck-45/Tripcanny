@@ -7,44 +7,27 @@ import { Button } from "@nextui-org/react";
 
 // Local Files
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <div className="HeroSection flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-[3rem] w-[100%] px-[3rem] py-[2rem] bg-[rgba(0,0,0,0.5)]">
-        <div className="flex flex-col items-center text-center text-[3rem] lg:text-[3.5rem] font-['Kalnia'] font-bold leading-[3.4rem] lg:leading-[4rem]">
-          <span className="text-[white]">
-            Build <span className="text-[#f31260]">your</span> tomorrow
-          </span>
-
-          <span className="text-[#f31260]">
-            on a <span className="text-[white]">strong</span> foundation.
-          </span>
-        </div>
-
-        <div className="flex gap-[2rem]">
-          <div className="text-white flex flex-col items-center">
-            <RiCustomerServiceFill className="text-[3rem]" />
-            <p className="text-center max-w-[6rem]">25 million+ clients</p>
-          </div>
-          <div className="text-white flex flex-col items-center">
-            <HiMiniBuildingOffice2 className="text-[3rem]" />
-            <p className="text-center max-w-[5rem]">400+ branches</p>
-          </div>
-          <div className="text-white flex flex-col items-center">
-            <TbCoins className="text-[3rem]" />
-            <p className="text-center max-w-[5rem]">$7.6 trillion in assets</p>
-          </div>
-        </div>
-
-        <Button
-          color="danger"
-          variant="ghost"
-          radius="full"
-          endContent={<FaArrowCircleRight className="mt-[0.2rem]" />}
-        >
-          Learn More
-        </Button>
+      <div className="flex flex-col justify-between items-center  gap-[3rem] w-[100%]  px-[12rem] py-[2rem] ">  
+        <div className=" flex flex-col  items-center justify-between gap-5">
+            <div className="text-yellow-400 font-bold text-7xl font-serif mb-4">
+              <h1>Hunting For Used Car</h1>
+            </div>
+            <div className="flex flex-row items-center justify-between gap-6 mt-5">
+              
+            <div className="bg-yellow-400 hover:bg-white hover:text-yellow-400 py-3 px-6 rounded-full text-white text-2xl font-semibold font-serif">
+              <Link to='/getReport'>Get Car Report</Link>
+            </div>
+            <div className="bg-yellow-400  hover:bg-white hover:text-yellow-400 rounded-full text-white py-3 px-6 text-2xl font-semibold font-serif">
+              <Link to='/findUsedCar'>Find Used Car</Link>
+            </div>
+            </div>
+            
+        </div> 
       </div>
     </div>
   );

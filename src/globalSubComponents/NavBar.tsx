@@ -27,7 +27,7 @@ import logo from "../globalAssets/logo.svg";
 import { RootState } from "../store/store";
 import { updateNavStatus } from "../store/navOpenStatusSlice";
 
-const menuItems = ["Home", "Services", "About", "Contact", "FAQ", "Log In"];
+const menuItems = ["Home", "Services", "About", "Contact", "Log In"];
 
 const NavBar = () => {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -42,12 +42,12 @@ const NavBar = () => {
     <Navbar
       isMenuOpen={navOpenStatus}
       onMenuOpenChange={setIsMenuOpen}
-      className="dark bg-[black] h-[5rem] nav"
+      className="dark bg-[white] h-[8rem] nav"
       maxWidth="xl"
       shouldHideOnScroll
     >
       <NavbarContent>
-        <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-white" />
+        <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-black" />
         <Link to="../Home">
           <Image width={120} src={logo} alt="logo" radius="none" className="hidden lg:block" />
         </Link>
@@ -68,7 +68,7 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
 
-        <Dropdown className="dark">
+        {/* <Dropdown className="dark">
           <NavbarItem
             className={curTab === "Services" ? "navActiveServices flex flex-col hidden lg:flex" : "hidden lg:flex"}
           >
@@ -85,7 +85,7 @@ const NavBar = () => {
               </Button>
             </DropdownTrigger>
           </NavbarItem>
-          <DropdownMenu aria-label="Services" className="gap-4 text-white font-['poppins']">
+           <DropdownMenu aria-label="Services" className="gap-4 text-white font-['poppins']">
             <DropdownItem key="Investment" className="p-0" textValue="Investment">
               <Link to="./Investment" style={{ display: "block", padding: "6px 8px" }}>
                 Investment
@@ -106,8 +106,8 @@ const NavBar = () => {
                 Retirement
               </Link>
             </DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
+          </DropdownMenu> 
+        </Dropdown> */}
 
         <NavbarItem>
           <Link
@@ -125,30 +125,32 @@ const NavBar = () => {
             Contact Us
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link
             to="../FAQ"
             className={curTab === "FAQ" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
             FAQ
           </Link>
+        </NavbarItem> */}
+        <NavbarItem>
+          <Link
+            to="../Auth"
+            className={curTab === "FAQ" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+          >
+            SIGNIN
+          </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <Link to="../Auth">
-            <Button color="danger" variant="bordered" radius="full">
+            <Button color="danger" variant="bordered" className="border-black-800"  >
               Login
             </Button>
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link to="../Auth">
-            <Button color="danger" variant="solid" radius="full" className="font-semibold">
-              Sign Up
-            </Button>
-          </Link>
-        </NavbarItem>
+      
       </NavbarContent>
       <NavbarMenu className="bg-[#28292b] mt-[1rem]">
         {menuItems.map((item, index) => {

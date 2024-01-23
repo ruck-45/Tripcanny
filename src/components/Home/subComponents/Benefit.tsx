@@ -1,67 +1,23 @@
 // Dependencies
-import { Card, CardHeader, CardBody, CardFooter, Button } from "@nextui-org/react";
-import { FaArrowCircleRight } from "react-icons/fa";
-import { IoRocketSharp } from "react-icons/io5";
-import { FaThumbsUp } from "react-icons/fa";
-import { TbBulbFilled } from "react-icons/tb";
+
 
 // Local Files
-import './Benefit.css'
-import BenefitSmallCard from "./BenefitSmallCard";
-import MissionChip from "./MissionChip";
 
-const smallCardData = [
-  {
-    heading: "Fast Process",
-    caption: "Dedicated to providing a fast and efficient service.",
-    logo: <IoRocketSharp className="text-[2rem]" />,
-  },
-  {
-    heading: "Best Quality",
-    caption: "Elevating Your Financial Experience.",
-    logo: <FaThumbsUp className="text-[2rem]" />,
-  },
-  {
-    heading: "Solution",
-    caption: "Your Pathway to Financial Growth.",
-    logo: <TbBulbFilled className="text-[2rem]" />,
-  },
-];
 
 const Benefit = () => {
   return (
-    <div className="py-[5rem] lg:px-[5rem] flex justify-center items-center benefit gap-[2rem]">
-      <Card className="max-w-[400px] p-[2rem] dark bg-[#F31260] shrink-0 benefitCard" isPressable>
-        <CardHeader className="font-['Concert_One'] text-[3rem]">Our Benefit</CardHeader>
-        <CardBody className="text-justify">
-          Navigate the exciting world of trading and investing with confidence. Whether you’re a seasoned investor or
-          just starting out, we offer the tools, resources, and expertise you need to achieve your financial goals.
-        </CardBody>
-        <CardFooter>
-          <Button variant="light" radius="full" endContent={<FaArrowCircleRight className="mt-[0.2rem]" />}>
-            Learn More
-          </Button>
-        </CardFooter>
-      </Card>
-
-      <div className="flex gap-[2rem] skills">
-        {smallCardData.map((data, index) => (
-          <BenefitSmallCard key={index} heading={data.heading} caption={data.caption} logo={data.logo} />
-        ))}
+    <>
+    <div className="bg-white md:h-[15rem] flex flex-col items-center justify-center p-5">
+      <div>
+        <h1 className="md:text-5xl  text-2xl text-black font-bold font-serif"><span className="text-yellow-600">WHY</span> CHOOSE US</h1>
       </div>
-
-      <div className="flex gap-[2rem] hidden skillsChip">
-        {smallCardData.map((data, index) => (
-          <MissionChip
-            logo={data.logo}
-            heading={data.heading}
-            caption={data.caption}
-            default={true}
-            innerWrapperClassName = "w-[16rem]"
-          />
-        ))}
+      <div className="md:h-2.5 h-1 bg-black w-20 md:w-40 text-black  "></div>
+      <div className="mt-8 text-center font-large text-black text-2xl md:text-3xl">
+        <h2>Every Vechile has History Report...!</h2>
       </div>
     </div>
+    </>
+    
   );
 };
 

@@ -1,0 +1,13 @@
+.ProductSection{
+    height: 85rem;
+    background-image: url('../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 750px) {
+    .ProductSection{
+        height: 240rem;
+    }
+  }

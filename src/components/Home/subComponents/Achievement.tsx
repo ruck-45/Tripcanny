@@ -1,26 +1,15 @@
 const Achievement = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 py-[5rem] px-[2rem] md:px-[5rem] lg:px-[8rem] text-[white] text-center gap-[2rem]">
+    <div className="bg-white md:h-[15rem] flex flex-col items-center justify-center p-5 ">
       <div>
-        <h1 className="font-['lilita_one'] text-[2.5rem]">12+</h1>
-        <p className="font-['poppins']">Years of Experience</p>
+        <h1 className="md:text-5xl  text-2xl text-black font-bold font-serif"><span className="text-yellow-600">OUR</span> SERVICES</h1>
       </div>
-
-      <div>
-        <h1 className="font-['lilita_one'] text-[2.5rem]">321 +</h1>
-        <p className="font-['poppins']">Portfolio</p>
-      </div>
-
-      <div>
-        <h1 className="font-['lilita_one'] text-[2.5rem]">20 +</h1>
-        <p className="font-['poppins']">Investment</p>
-      </div>
-
-      <div>
-        <h1 className="font-['lilita_one'] text-[2.5rem]">23</h1>
-        <p className="font-['poppins']">Expert Team</p>
+      <div className="md:h-2.5 h-1 bg-black w-20 md:w-40 text-black  "></div>
+      <div className=" mt-8 text-center font-large text-black text-2xl md:text-3xl">
+        <h2>Easy and effective way to get you all quick services here!</h2>
       </div>
     </div>
+    
   );
 };
 

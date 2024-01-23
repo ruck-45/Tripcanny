@@ -1,16 +1,16 @@
 .active {
-  color: #f31260;
+  color: black;
   font-weight: 700;
   font-size: large;
 }
 
 .notActive {
-  color: white;
+  color: black;
   font-size: large;
 }
 
 .notActive:hover {
-  color: #f31260;
+  color: black;
 }
 
 .nav {
@@ -21,9 +21,9 @@
   content: "";
   height: 0.25rem;
   border-radius: 1rem;
-  background-color: #f31260;
+  background-color: white;
   transform: translateY(1.75rem);
-  filter: drop-shadow(0 -0.3rem 0.4rem #f31260);
+  filter: drop-shadow(0 -0.3rem 0.4rem #d8d0d3);
 }
 
 .navActiveServices::after {
@@ -31,9 +31,9 @@
   height: 0.25rem;
   border-radius: 1rem;
   transform: translate(1.25rem, 1rem) !important;
-  background-color: #f31260;
+  background-color: white;
   max-width: 6rem;
-  filter: drop-shadow(0 -0.3rem 0.4rem #f31260);
+  filter: drop-shadow(0 -0.3rem 0.4rem #d7cfd2);
 }
 
 .logo {
