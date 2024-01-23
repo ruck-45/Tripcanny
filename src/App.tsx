@@ -13,8 +13,10 @@ import Auth from "./components/Auth/Auth";
 import Crypto from "./components/Crypto/Crypto";
 
 
+
 import Footer from "./globalSubComponents/Footer";
 import { RootState } from "./store/store";
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -27,9 +29,9 @@ function App() {
         <Route path="/" element={<Navigate to="/Home" />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
-        {/* <Route path="/Contact" element={<Contact />} /> */}
+        <Route path="/Contact" element={<Contact />} />
         {/* <Route path="/FAQ" element={<FAQ />} /> */}
-        <Route path="/Auth" element={<Auth />} />
+        
         {/* <Route path="/Investment" element={<Investment />} /> */}
         <Route path="/Crypto" element={<Crypto />} />
         {/* <Route path="/Options" element={<Options />} /> */}

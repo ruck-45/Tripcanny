@@ -17,9 +17,11 @@ const About = () => {
     behavior: "smooth",
   });
 
+  const title= {des:"About"}
+
   return (
     <div>
-      <Intro/>
+      <Intro des={title.des}/>
       <Specialization/>
       <Benefit/>
       <Mission />
