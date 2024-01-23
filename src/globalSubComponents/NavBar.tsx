@@ -42,7 +42,7 @@ const NavBar = () => {
     <Navbar
       isMenuOpen={navOpenStatus}
       onMenuOpenChange={setIsMenuOpen}
-      className="dark bg-[white] h-[8rem] nav"
+      className="dark bg-none h-[5rem] nav"
       maxWidth="xl"
       shouldHideOnScroll
     >
@@ -58,57 +58,17 @@ const NavBar = () => {
         </Link>
       </NavbarContent>
 
-      <NavbarContent className="hidden lg:flex" justify="center">
+      <NavbarContent className="hidden lg:flex " justify="center">
         <NavbarItem>
           <Link
             to="../Home"
-            className={curTab === "Home" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={
+              curTab === "Home" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"
+            }
           >
             Home
           </Link>
         </NavbarItem>
-
-        {/* <Dropdown className="dark">
-          <NavbarItem
-            className={curTab === "Services" ? "navActiveServices flex flex-col hidden lg:flex" : "hidden lg:flex"}
-          >
-            <DropdownTrigger>
-              <Button
-                disableRipple
-                className={curTab === "Services" ? "active" : "notActive"}
-                endContent={<RiArrowDropDownLine className="HomeDropdownIcon" />}
-                radius="sm"
-                variant="light"
-                size="lg"
-              >
-                Services
-              </Button>
-            </DropdownTrigger>
-          </NavbarItem>
-           <DropdownMenu aria-label="Services" className="gap-4 text-white font-['poppins']">
-            <DropdownItem key="Investment" className="p-0" textValue="Investment">
-              <Link to="./Investment" style={{ display: "block", padding: "6px 8px" }}>
-                Investment
-              </Link>
-            </DropdownItem>
-            <DropdownItem key="Crypto" className="p-0" textValue="Crypto">
-              <Link to="./Crypto" style={{ display: "block", padding: "6px 8px" }}>
-                Crypto
-              </Link>
-            </DropdownItem>
-            <DropdownItem key="Options" className="p-0" textValue="Options">
-              <Link to="./Options" style={{ display: "block", padding: "6px 8px" }}>
-                Options
-              </Link>
-            </DropdownItem>
-            <DropdownItem key="Retirement" className="p-0" textValue="Retirement">
-              <Link to="./Retirement" style={{ display: "block", padding: "6px 8px" }}>
-                Retirement
-              </Link>
-            </DropdownItem>
-          </DropdownMenu> 
-        </Dropdown> */}
-
         <NavbarItem>
           <Link
             to="../About"
@@ -145,12 +105,11 @@ const NavBar = () => {
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <Link to="../Auth">
-            <Button color="danger" variant="bordered" className="border-black-800"  >
+            <Button color="danger" variant="bordered" className="border-black-800">
               Login
             </Button>
           </Link>
         </NavbarItem>
-      
       </NavbarContent>
       <NavbarMenu className="bg-[#28292b] mt-[1rem]">
         {menuItems.map((item, index) => {

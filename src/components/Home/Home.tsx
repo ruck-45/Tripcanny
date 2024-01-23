@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <Benefit />
+      <Benefit/>
       <Mission />
       <Achievement />
       {/* <Help /> */}
