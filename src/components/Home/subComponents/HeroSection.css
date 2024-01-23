@@ -1,8 +1,5 @@
-
-
 .HeroSection{
-    height: 30rem;
-    background-image: url('../assets/car.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3)),  url('../assets/CarHero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
