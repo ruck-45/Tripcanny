@@ -1,13 +1,20 @@
 // Local Files
 import data from '../globalAssets/icon/data1.jpg';
-import computer from '../globalAssets/icon/data2.jpg';
+import computer from '../globalAssets/icon/history.jpg';
 import network from '../globalAssets/icon/data3.jpg';
-import mobile from '../globalAssets/icon/service6.jpg';
+import mobile from '../globalAssets/icon/data2.jpg';
+
+
+//Dependicies
+import { RiChatHistoryFill } from "react-icons/ri";
+import { MdDataExploration } from "react-icons/md";
+import { FaCarSide } from "react-icons/fa";
+import { MdHistoryToggleOff } from "react-icons/md";
 
 const missionData = [
   {
     category: "Accident Data",
-    icon: data, // Replace with the actual icon source
+    icon: MdDataExploration, // Replace with the actual icon source
     details: [
       "Accident History",
       "Damage Severity (Severe/Minor)",
@@ -19,7 +26,7 @@ const missionData = [
   },
   {
     category: "Service History",
-    icon: computer, // Replace with the actual icon source
+    icon: RiChatHistoryFill, // Replace with Actual width height photo
     details: [
       "Oil Changes",
       "Tire Rotations",
@@ -31,7 +38,7 @@ const missionData = [
   },
   {
     category: "Type of Use",
-    icon: network, // Replace with the actual icon source
+    icon: FaCarSide,  // Replace with Actual width height photo
     details: [
       "Personal Vehicle",
       "Rental Vehicle",
@@ -43,7 +50,7 @@ const missionData = [
   },
   {
     category: "Ownership History",
-    icon: mobile, // Replace with the actual icon source
+    icon: MdHistoryToggleOff, // Replace with Actual width height photo
     details: [
       "Personal Vehicle",
       "Rental Vehicle",
@@ -58,18 +65,18 @@ const missionData = [
 const Mission = () => {
   return (
     <div className="bg-yellow-400 md:h-[40rem] h-auto w-full py-[2rem]">
-      <div className="bg-white h-auto text-black md:mx-[6rem] mx-[2rem] shadow-[0_0_10px_black] rounded-sm ">
+      <div className="bg-white h-auto md:h-[38rem] text-black md:mx-[6rem] mx-[2rem] drop-shadow-xl rounded-sm ">
         <div className="flex flex-col items-center justify-center p-[5rem]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12">
             {missionData.map((item, index) => (
               <div key={index} className="flex flex-col items-center justify-center gap-3">
-                <div className="w-[8rem] h-[8rem] rounded-full">
-                  <img className="rounded-full" src={item.icon} alt="" />
+                <div className="text-5xl text-center rounded-full">
+                  {<item.icon/>}
                 </div>
-                <div className="mt-5 text-2xl font-serif text-black text-center">
+                <div className="mt-5    text-2xl text-1xl font-serif text-black text-center">
                   <h1>{item.category}</h1>
                 </div>
-                <div className="mt-2 text-large text-center font-light text-black">
+                <div className="mt-2 text-medium  text-center font-light text-black ">
                   <ul>
                     {item.details.map((detail, i) => (
                       <li key={i}>{detail}</li>
@@ -80,8 +87,8 @@ const Mission = () => {
             ))}
           </div>
 
-         <div className= 'bg-yellow-500  border-solid mt-[2rem] px-4 py-2'>
-         <button  className='text-lg font-semibold text-black'>VIEW SAMPLE REPORT</button>
+         <div className= 'bg-yellow-500  border-solid mt-[4rem] md:mt-[6rem] px-4 py-2  '>
+         <button  className='md:text-lg text-1xl font-semibold text-black'>VIEW SAMPLE REPORT</button>
          </div>
      </div>
     </div>

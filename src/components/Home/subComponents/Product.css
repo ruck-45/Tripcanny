@@ -1,5 +1,5 @@
 .ProductSection{
-    height: 85rem;
+    height: 35rem;
     background-image: url('../assets/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -8,6 +8,6 @@
 
 @media only screen and (max-width: 750px) {
     .ProductSection{
-        height: 240rem;
+        height: 60rem;
     }
   }

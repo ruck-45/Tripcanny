@@ -12,6 +12,7 @@ import Services from "./subComponents/Services";
 import Description from "./subComponents/Description";
 import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
+import Testimonials from "./subComponents/Testimonials";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const Home = () => {
       {/* <Help /> */}
       <Services />
       <Description/>
+      <Testimonials/>
       <Product/>
       <Abovefoter/>
       

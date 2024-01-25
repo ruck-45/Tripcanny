@@ -22,7 +22,9 @@ const HeroSection = () => {
           <div className="bg-yellow-400 hover:bg-white hover:text-yellow-400 px-2 py-3 md:py-3 md:px-6  text-white text-xl md:text-2xl font-semibold font-serif">
             <Link to="/getReport">Get Car Report</Link>
           </div>
-          <span className="text-white font-bold text-2xl md:text-4xl font-serif"> OR </span>
+          <div className="md:px-[0.3rem] px-[4rem]">
+          <span className="text-white font-bold text-2xl md:text-4xl font-serif "> OR </span>
+          </div>
           <div className="bg-yellow-400 hover:bg-white hover:text-yellow-400 px-2 py-3 md:py-3 md:px-6  text-white text-xl md:text-2xl font-semibold font-serif">
             <Link to="/findUsedCar">Find Used Car</Link>s
           </div>
