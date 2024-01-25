@@ -1,12 +1,12 @@
 .active {
   color: #F59E0B;
   font-weight: 700;
-  font-size: large;
+  font-size: 1.2rem;
 }
 
 .notActive {
-  color: white;
-  font-size: large;
+  color: black;
+  font-size: 1.2rem;
 }
 
 .notActive:hover {
@@ -15,15 +15,6 @@
 
 .nav {
   font-family: "poppins";
-}
-
-.navActive::after {
-  content: "";
-  height: 0.25rem;
-  border-radius: 1rem;
-  background-color: white;
-  transform: translateY(1.75rem);
-  filter: drop-shadow(0 -0.3rem 0.4rem #d8d0d3);
 }
 
 .navActiveServices::after {

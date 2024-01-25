@@ -23,7 +23,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 // Local Files
 import "./NavBar.css";
-import logo from "../globalAssets/logo.svg";
+import logo from "../globalAssets/CarFxLogo.svg";
 import { RootState } from "../store/store";
 import { updateNavStatus } from "../store/navOpenStatusSlice";
 
@@ -42,7 +42,7 @@ const NavBar = () => {
     <Navbar
       isMenuOpen={navOpenStatus}
       onMenuOpenChange={setIsMenuOpen}
-      className="dark bg-none h-[5rem] nav"
+      className=" bg-white h-[8rem] nav"
       maxWidth="xl"
       shouldHideOnScroll
     >
@@ -62,9 +62,7 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             to="../Home"
-            className={
-              curTab === "Home" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"
-            }
+            className={curTab === "Home" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
             Home
           </Link>
@@ -93,19 +91,19 @@ const NavBar = () => {
             FAQ
           </Link>
         </NavbarItem> */}
+      </NavbarContent>
+      <NavbarContent justify="end">
         <NavbarItem>
           <Link
             to="../Auth"
-            className={curTab === "FAQ" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "FAQ" ? "active navActive flex flex-col px-[1rem] text-[1rem]" : "notActive px-[1rem]"}
           >
-            SIGNIN
+            Sign Up
           </Link>
         </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <Link to="../Auth">
-            <Button color="danger" variant="bordered" className="border-black-800">
+            <Button variant="bordered" className="border-black-800 text-[#F59E0B] text-[1.1rem] p-5">
               Login
             </Button>
           </Link>
