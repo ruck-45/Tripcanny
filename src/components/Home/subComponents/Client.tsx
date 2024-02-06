@@ -24,8 +24,8 @@ const Client = () => {
             
         </div>
 
-        <div className='text-thin  font-sans    '>
-                <h3>You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. I am <br />really satisfied with my first laptop service.</h3>
+        <div className='text-thin  font-sans  px-[21rem] md:p-[1rem] '>
+                <h3>You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. I am really satisfied with my first laptop service.</h3>
             </div>
     </div>
   )

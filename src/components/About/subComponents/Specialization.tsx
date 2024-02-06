@@ -1,10 +1,10 @@
 import React from 'react'
 
-import ppo from './assets/yelowcar.jpg'
+import ppo from './assets/random.jpg'
 
 const Specialization = () => {
   return (
-    <div  className='bg-white h-auto md:h-[40rem] flex md:flex-row flex-col items-center justify-between border-black'>
+    <div  className='bg-white h-auto md:h-[40rem] flex md:flex-row flex-col items-center justify-evenly border-black'>
       
         <div className='w-[43em] md:p-[5rem] px-[2rem] h-[25rem] bg-center cover'>
           <img className=' ' src={ppo} />

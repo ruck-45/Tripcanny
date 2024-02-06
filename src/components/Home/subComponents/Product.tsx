@@ -3,28 +3,17 @@ import './Product.css'
 import AllProduct from './AllProduct'
 import Client from './Client'
 import p1 from '../assets/p1.jpg'
+import Testimonials from './Testimonials'
 
 const section1 = { des: "Used Cars" , photo:p1}
 const section2 = { des: "New Cars" , photo:p1}
 
 const Product = () => {
   return (
-    <div className="ProductSection flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-[3rem] w-[100%] px-[3rem]  "> 
-
-        <div className='flex flex-col md:flex-row gap-10 '>
-             <AllProduct des={section1.des} photo={section1.photo}/>
-             <AllProduct des={section2.des} photo={section2.photo}/>
-             
-        </div>
-         
-         
-
-        <div>
-            <Client/>
-        </div>
+    <div className="ProductSection flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center gap-[3rem] w-[100%] md:px-[3rem] p-[10rem]  ">
         <div className='bg-yellow-500 md:h-[15rem] h-[25rem] px-[2rem] border rounded-xl '>
-            <div className='flex flex-col md:flex-row items-center md:items-start justify-between p-[3rem]'>
+            <div className='flex flex-col md:flex-row items-center md:items-start justify-between p-[3rem] gap-7'>
                 <div className='flex flex-col items-start justify-between'>
                     <div className='text-4xl font-bold text-white '>
                         <h1>REQUEST A FREE QUOTE</h1>
