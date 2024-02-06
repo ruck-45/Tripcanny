@@ -139,7 +139,9 @@ const Footer = () => {
         </div>
       </footer>
       <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">
-        © 2023 Kreative Machinez • All Rights Reserved
+
+        © 2024 CAR-FX • All Rights Reserved
+
       </div>
     </>
   );
