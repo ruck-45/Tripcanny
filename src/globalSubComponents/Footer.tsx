@@ -1,5 +1,6 @@
 // Dependencies
 import { Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 // Local Files
 
 const SITEMAP = [
