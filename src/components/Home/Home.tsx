@@ -28,9 +28,9 @@ const Home = () => {
       <FlightBooking />
       <Benefit />
       <Mission />
+      <Description />
       <Achievement />
       <Services />
-      <Description />
       <Product />
       <Abovefoter />
     </div>
