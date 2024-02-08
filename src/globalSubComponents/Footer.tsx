@@ -1,28 +1,27 @@
 // Dependencies
 import { Typography } from "@material-tailwind/react";
-
+import { Link } from "react-router-dom";
 // Local Files
-
 
 const SITEMAP = [
   {
-    title: "Products",
-    links: ["Used Cars for Sale", "CARFX Car Care", "CARFX Value", "CARFX Reports","Sell My Car"],
+    title: "Flights",
+    links: ["Book Flights", "Flight Status", "Flight Deals", "Manage Booking"],
   },
   {
-    title: "Resources",
-    links: ["Car Research", "Recalls", "Find a Dealer", "Find a Service Shop","Sample Report"],
+    title: "Destinations",
+    links: ["Destination Guides", "Travel Tips", "Travel Blog"],
   },
   {
     title: "About Us",
-    links: ["About CARFX","Blog","Press Room", "Careers"],
+    links: ["About FairPerfect", "Blog", "Press Room", "Careers"],
   },
   {
     title: "Contact",
-    links: ["Customer Support","Dealer Support"],
+    links: ["Customer Support", "Partner with Us", "Privacy Policy"],
   },
 ];
- 
+
 
 const Footer = () => {
   return (
@@ -42,10 +41,8 @@ const Footer = () => {
                 </Typography>
                 <ul className="space-y-1">
                   {links.map((link, key) => (
-                    <Typography key={key} as="li" color="blue-gray" className="font-normal" placeholder={undefined}>
-                      <a href="#" className="inline-block py-1 pr-2 transition-transform hover:scale-105">
-                        {link}
-                      </a>
+                    <Typography key={key} as="li" className="font-normal" placeholder={undefined}>
+                      <Link to={`${link === "Privacy Policy" ? "/Privacy" : ""}`}>{link}</Link>
                     </Typography>
                   ))}
                 </ul>
@@ -53,7 +50,6 @@ const Footer = () => {
             ))}
           </div>
           <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4  ">
-            
             <div className="flex gap-4 text-blue-gray-900 sm:justify-center text-white">
               <Typography
                 placeholder={undefined}
@@ -126,9 +122,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">
-
-        © 2024 CAR-FX • All Rights Reserved
-
+        © 2024 FAIR PERFECT • All Rights Reserved
       </div>
     </>
   );

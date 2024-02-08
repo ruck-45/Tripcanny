@@ -1,6 +1,9 @@
 import Intro from "./Intro";
-
 export const Privacy = () => {
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+    });
   return (
     <>
       <Intro des="Privacy" />
