@@ -7,7 +7,6 @@ import HeroSection from "./subComponents/HeroSection";
 import Benefit from "./subComponents/Benefit";
 import Mission from "../../globalSubComponents/Mission";
 import Achievement from "./subComponents/Achievement";
-import Help from "./subComponents/Help";
 import Services from "./subComponents/Services";
 import Description from "./subComponents/Description";
 import Abovefoter from "./subComponents/Abovefoter";
@@ -29,7 +28,6 @@ const Home = () => {
       <Benefit/>
       <Mission />
       <Achievement />
-      {/* <Help /> */}
       <Services />
       <Description/>
       <Testimonials/>
