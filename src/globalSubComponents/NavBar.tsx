@@ -19,11 +19,10 @@ import {
 } from "@nextui-org/react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { RiArrowDropDownLine } from "react-icons/ri";
 
 // Local Files
 import "./NavBar.css";
-import logo from "../globalAssets/CarFxLogo.svg";
+import logo from "../globalAssets/logo.svg";
 import { RootState } from "../store/store";
 import { updateNavStatus } from "../store/navOpenStatusSlice";
 
