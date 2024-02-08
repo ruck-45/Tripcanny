@@ -4,7 +4,7 @@ export const Privacy = () => {
   return (
     <>
       <Intro des="Privacy" />
-      <div className="flex flex-col bg-white py-[2rem] px-[4rem] items-center gap-3">
+      <div className="flex flex-col bg-white md:py-[2rem] md:px-[4rem] px-[0.7rem] items-center gap-3">
         <div className="h-auto w-full p-4 text-start rounded-md flex flex-col gap-3 md:p-[5rem]">
           <h1 className="text-3xl font-bold text-center">Privacy Policy</h1>
           <p>

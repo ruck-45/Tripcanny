@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div>
       <Intro des={title.des} />
-      <div className="grid lg:grid-cols-3 bg-white gap-5 p-[2rem] px-[5rem]">
+      <div className="grid lg:grid-cols-3 bg-white gap-5 p-[1rem] md:p-[2rem] md:px-[5rem]">
         <ContactCard heading="Email" value="sachin@gmail.com" icon={<MdEmail />} />
         <ContactCard heading="Phone" value="+91 8777666767" icon={<MdPhone />} />
         <ContactCard heading="Address" value="Flat 57 Near Bhopal" icon={<FaAddressBook />} />

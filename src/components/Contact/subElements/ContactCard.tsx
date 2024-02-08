@@ -6,7 +6,7 @@ type CardProps = {
 };
 const ContactCard = (props: CardProps) => {
   return (
-    <Card radius="none">
+    <Card radius="none" className="min-w-[11rem]">
       <CardHeader className="justify-center text-2xl font-bold text-yellow-400 gap-4">
         <div className="h-5 w-4">{props.icon}</div>
         <div>{props.heading}</div>
