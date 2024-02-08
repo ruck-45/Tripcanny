@@ -5,13 +5,14 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import HeroSection from "./subComponents/HeroSection";
 import Benefit from "./subComponents/Benefit";
-import Mission from "../../globalSubComponents/Mission";
+
 import Achievement from "./subComponents/Achievement";
 import Services from "./subComponents/Services";
 import Description from "./subComponents/Description";
 import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
 import FlightBooking from "./subComponents/FlightBooking";
+import Mission from "../../globalSubComponents/Mission";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -28,9 +29,9 @@ const Home = () => {
       <FlightBooking />
       <Benefit />
       <Mission />
+      <Description />
       <Achievement />
       <Services />
-      <Description />
       <Product />
       <Abovefoter />
     </div>
