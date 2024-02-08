@@ -6,12 +6,16 @@ type CardProps = {
 };
 const ContactCard = (props: CardProps) => {
   return (
-    <Card radius="none" className="min-w-[11rem]">
-      <CardHeader className="justify-center text-2xl font-bold text-yellow-400 gap-4">
-        <div className="h-5 w-4">{props.icon}</div>
-        <div>{props.heading}</div>
+    <Card radius="none" className="min-w-[11rem] hover:scale-95 cursor-pointer">
+      <CardHeader className="flex flex-col justify-center gap-1">
+        <div className="flex flex-row text-2xl gap-4 font-bold text-yellow-400">
+          <p className="h-5 w-4 mt-1">{props.icon}</p>
+          <p>{props.heading}</p>
+        </div>
+        <div>
+          <p className="text-center text-sm">{props.value}</p>
+        </div>
       </CardHeader>
-      <CardFooter className="justify-center">{props.value}</CardFooter>
     </Card>
   );
 };

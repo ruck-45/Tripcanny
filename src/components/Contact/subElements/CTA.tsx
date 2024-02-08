@@ -26,7 +26,7 @@ const CTA = (props: CTAProps) => {
       radius="none"
     >
       <Link
-        to={address}
+        to="tel:+18888917176"
         className="py-[2rem] w-full flex flex-col sm:flex-row justify-center items-center sm:gap-[2rem] md:gap-[4rem]"
         state={{ offset: props.offset ? props.offset : 0 }}
       >

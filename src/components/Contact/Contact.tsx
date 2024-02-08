@@ -16,12 +16,12 @@ const Contact = () => {
   return (
     <div>
       <Intro des={title.des} />
-      <div className="grid lg:grid-cols-3 bg-white gap-5 p-[1rem] md:p-[2rem] md:px-[5rem]">
+      <div className="grid lg:grid-cols-3 bg-white gap-5 p-[1rem] md:p-[2rem] md:px-[8rem]">
         <ContactCard heading="Email" value="support@fairperfect.com" icon={<MdEmail />} />
         <ContactCard heading="Phone" value="+1 (888) 891-7176" icon={<MdPhone />} />
         <ContactCard heading="Address" value="544 McCabe St, Port Charlotte, FL 33953, USA" icon={<FaAddressBook />} />
       </div>
-      <div className="grid lg:grid-cols-2">
+      <div className="grid lg:grid-cols-2 justify-start">
         <EmailForm />
         <Map />
       </div>
