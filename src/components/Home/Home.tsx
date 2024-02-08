@@ -13,6 +13,7 @@ import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
 import FlightBooking from "./subComponents/FlightBooking";
 import Mission from "../../globalSubComponents/Mission";
+import Popover from "./subComponents/Popover";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ const Home = () => {
 
   return (
     <div>
+      <Popover />
       <HeroSection />
       <FlightBooking />
       <Benefit />
