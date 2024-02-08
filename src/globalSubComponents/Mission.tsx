@@ -1,10 +1,3 @@
-// Local Files
-import data from '../globalAssets/icon/data1.jpg';
-import computer from '../globalAssets/icon/history.jpg';
-import network from '../globalAssets/icon/data3.jpg';
-import mobile from '../globalAssets/icon/data2.jpg';
-
-
 //Dependicies
 import { RiChatHistoryFill } from "react-icons/ri";
 import { MdDataExploration } from "react-icons/md";
