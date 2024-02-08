@@ -17,6 +17,7 @@ import Crypto from "./components/Crypto/Crypto";
 import Footer from "./globalSubComponents/Footer";
 import { RootState } from "./store/store";
 import Contact from "./components/Contact/Contact";
+import { Privacy } from "./globalSubComponents/Privacy";
 
 
 function App() {
@@ -30,16 +31,11 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        {/* <Route path="/FAQ" element={<FAQ />} /> */}
-        
-        {/* <Route path="/Investment" element={<Investment />} /> */}
         <Route path="/Crypto" element={<Crypto />} />
-        {/* <Route path="/Options" element={<Options />} /> */}
-        {/* <Route path="/Retirement" element={<Retirement />} /> */}
+        <Route path="/Privacy" element={<Privacy />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
       {curTab === "Auth" ? null : <Footer />}
-      
     </>
   );
 }
