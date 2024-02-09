@@ -1,9 +1,14 @@
 import Intro from "./Intro";
+import { useDispatch } from "react-redux";
+import { updateTab } from "../store/curTabSlice";
+
 export const Privacy = () => {
-    window.scrollTo({
+  const dispatch = useDispatch();
+  dispatch(updateTab("Privacy"));
+  window.scrollTo({
     top: 0,
     behavior: "smooth",
-    });
+  });
   return (
     <>
       <Intro des="Privacy" />
