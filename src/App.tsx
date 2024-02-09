@@ -6,14 +6,7 @@ import { useSelector } from "react-redux";
 import NavBar from "./globalSubComponents/NavBar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-
-
 import Auth from "./components/Auth/Auth";
-
-import Crypto from "./components/Crypto/Crypto";
-
-
-
 import Footer from "./globalSubComponents/Footer";
 import { RootState } from "./store/store";
 import Contact from "./components/Contact/Contact";
@@ -31,7 +24,6 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Crypto" element={<Crypto />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>

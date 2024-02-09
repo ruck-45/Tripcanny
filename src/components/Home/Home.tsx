@@ -26,7 +26,7 @@ const Home = () => {
 
   return (
     <div>
-      <Popover />
+      {/* <Popover /> */}
       <HeroSection />
       <FlightBooking />
       <Benefit />

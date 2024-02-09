@@ -19,7 +19,7 @@ import logo from "../globalAssets/logo.svg";
 import { RootState } from "../store/store";
 import { updateNavStatus } from "../store/navOpenStatusSlice";
 
-const menuItems = ["Home", "About", "Contact"];
+const menuItems = ["Home", "About", "Contact", "Privacy"];
 
 const NavBar = () => {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -73,6 +73,14 @@ const NavBar = () => {
             className={curTab === "Contact" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
             Contact Us
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            to="../Privacy"
+            className={curTab === "Privacy" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+          >
+            Privacy
           </Link>
         </NavbarItem>
       </NavbarContent>
