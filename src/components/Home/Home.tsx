@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div className="max-w-[100vw] overflow-x-hidden">
-      {/* <Popover /> */}
+      <Popover />
       <HeroSection />
       <FlightBooking />
       <WhyChooseUs />

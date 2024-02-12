@@ -7,6 +7,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdAddIcCall } from "react-icons/md";
 
 // Local Files
+import "./Popover.css";
 import { updatePopoverStatus } from "../../../store/popoverStatusSlice";
 import { RootState } from "../../../store/store";
 
@@ -30,9 +31,9 @@ const Popover = () => {
       <Button onPress={onOpen} className="hidden" ref={PopoverButton}>
         Open Modal
       </Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden" placement="center">
         <a href="tel:+1 (888) 891-7176">
-          <ModalContent className="h-[99%]">
+          <ModalContent className="h-[75%] pop">
             <ModalHeader className="flex items-center gap-[1rem]">
               <Button isIconOnly variant="solid" radius="full" className="text-[1rem]">
                 <FaPhone />
@@ -41,7 +42,7 @@ const Popover = () => {
             </ModalHeader>
             <ModalBody className="flex flex-col justify-center items-center">
               <h1 className="text-[3rem] leading-[2.2rem] font-bold font-['kalina'] text-center mb-[2rem]">
-                FARE PERFECT
+                Tripcanny
               </h1>
               <p className="font-bold mb-[2rem] text-[1.5rem]">More Info</p>
               <BiSolidPhoneCall className="text-[5rem] " />

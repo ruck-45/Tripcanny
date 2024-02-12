@@ -1,6 +1,7 @@
 // Dependencies
 import { Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { Divider } from "@nextui-org/react";
 // Local Files
 
 const SITEMAP = [
@@ -118,7 +119,11 @@ const Footer = () => {
               </Typography>
             </div>
           </div>
-          <div className="text-white font-bold p-[1rem] border-t">ARC NUMBER : 05643573 </div>
+          <div className="text-white font-semibold p-[1rem] border-t flex gap-[2rem]">
+            <p>Tripcanny LLC</p> <Divider orientation="vertical" className="h-6 bg-white" />
+            <p>16616 Woodruff Ave, Bellflower, CA 90706, USA</p>
+            <Divider orientation="vertical" className="h-6 bg-white" /> <p>ARC NUMBER : 05643573</p>
+          </div>
         </div>
       </footer>
       <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">
