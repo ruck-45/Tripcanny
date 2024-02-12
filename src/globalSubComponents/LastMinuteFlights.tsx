@@ -2,10 +2,8 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../store/curTabSlice";
 import Intro from "./Intro";
 import Subscribe from "./Subscribe";
-import "./LastMin.css"
+import "./LastMin.css";
 const title = { des: "Last Minute Flights" };
-const lastFlightImg = "../globalAssets/images/lastMinute.jpg";
-
 
 const LastMinuteFlights = () => {
   const dispatch = useDispatch();
@@ -20,10 +18,7 @@ const LastMinuteFlights = () => {
     <>
       <Intro des={title.des} />
       <div className="flex flex-col justify-start h-auto bg-white gap-2 gap-y-6 px-[10rem] py-[3rem]">
-        <div
-          className="h-[30rem] rounded-3xl bg-no-repeat bg-cover bg-center flex flex-col p-[3rem] justify-between lastMin"
-        >
-        </div>
+        <div className="h-[30rem] rounded-3xl bg-no-repeat bg-cover bg-center flex flex-col p-[3rem] justify-between lastMin"></div>
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-bold">Last-Minute Flight Tickets Made Affordable</h1>
           <p>
