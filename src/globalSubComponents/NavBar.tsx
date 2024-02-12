@@ -34,7 +34,7 @@ const NavBar = () => {
     <Navbar
       isMenuOpen={navOpenStatus}
       onMenuOpenChange={setIsMenuOpen}
-      className=" bg-white h-[8rem] nav"
+      className=" bg-white h-[8rem] nav drop-shadow-md"
       maxWidth="xl"
       shouldHideOnScroll
     >
