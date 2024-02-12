@@ -14,7 +14,7 @@ const SITEMAP = [
   },
   {
     title: "About Us",
-    links: ["About FairPerfect", "Blog", "Press Room", "Careers"],
+    links: ["About Tripcanny", "Blog", "Press Room", "Careers"],
   },
   {
     title: "Contact",
@@ -22,12 +22,11 @@ const SITEMAP = [
   },
 ];
 
-
 const Footer = () => {
   return (
     <>
       <footer className="relative w-full">
-        <div className="mx-auto w-full max-w-7xl px-8">
+        <div className="mx-auto w-full max-w-7xl px-8 flex flex-col items-center">
           <div className="mx-auto grid w-full grid-cols-1 text-white gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
             {SITEMAP.map(({ title, links }, key) => (
               <div key={key} className="w-full">
@@ -119,10 +118,11 @@ const Footer = () => {
               </Typography>
             </div>
           </div>
+          <div className="text-white font-bold p-[1rem] border-t">ARC NUMBER : 05643573 </div>
         </div>
       </footer>
       <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">
-        © 2024 FAIR PERFECT • All Rights Reserved
+        © 2024 Tripcanny • All Rights Reserved
       </div>
     </>
   );

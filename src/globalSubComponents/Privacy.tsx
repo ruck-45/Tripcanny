@@ -16,12 +16,12 @@ export const Privacy = () => {
         <div className="h-auto w-full p-4 text-start rounded-md flex flex-col gap-3 md:p-[5rem]">
           <h1 className="text-3xl font-bold text-center">Privacy Policy</h1>
           <p>
-            Welcome to FarePerfect. This privacy statement outlines the terms and conditions governing your use of our
+            Welcome to Tripcanny. This privacy statement outlines the terms and conditions governing your use of our
             website. Please carefully review this privacy policy as it pertains to all aspects of your travel
             experience.
           </p>
           <p>
-            At FarePerfect, we prioritize building a strong relationship between our users and the accommodations they
+            At Tripcanny, we prioritize building a strong relationship between our users and the accommodations they
             require. This Privacy Statement aims to inform you about the personal information we collect from you and
             how we intend to use it. Your cooperation and openness to our processes are crucial for us to operate
             efficiently and safeguard your data.
@@ -46,7 +46,7 @@ export const Privacy = () => {
 
           <h1 className="font-bold text-xl">Third Party Links</h1>
           <p>
-            FarePerfect is linked to third-party integrators. Users should exercise caution when interacting with these
+            Tripcanny is linked to third-party integrators. Users should exercise caution when interacting with these
             links. We advise against sharing personal information on external sites unless they are verified as
             travel-based. Users access external sites at their own risk.
           </p>
@@ -62,7 +62,7 @@ export const Privacy = () => {
 
           <h1 className="font-bold text-xl">CCPA Privacy Policy Act</h1>
           <p>
-            FarePerfect complies with the CCPA Privacy Policy Act, giving consumers control over their personal
+            Tripcanny complies with the CCPA Privacy Policy Act, giving consumers control over their personal
             information. Users have the right to know, delete, opt-out, and non-discriminate regarding their data.
           </p>
 

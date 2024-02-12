@@ -21,7 +21,7 @@ const servicesData = [
     photo: RiServiceFill,
     title: "Tailored Experiences",
     description:
-      "At FarePerfect, we understand that every traveler is unique, which is why we pride ourselves on offering tailored experiences to each of our customers.",
+      "At Tripcanny, we understand that every traveler is unique, which is why we pride ourselves on offering tailored experiences to each of our customers.",
   },
   {
     photo: BiWorld,
