@@ -14,7 +14,7 @@
 }
 
 .seo:hover:after {
-  content: "Plane Booking";
+  content: "Flight Booking";
   font-size: 2rem;
   color: yellow;
 }

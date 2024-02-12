@@ -31,7 +31,7 @@ const Popover = () => {
         Open Modal
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden">
-        <a href="tel:+1 (888) 891-7176">
+        <a href="tel:+1 (844) 671-7473">
           <ModalContent className="h-[99%]">
             <ModalHeader className="flex items-center gap-[1rem]">
               <Button isIconOnly variant="solid" radius="full" className="text-[1rem]">

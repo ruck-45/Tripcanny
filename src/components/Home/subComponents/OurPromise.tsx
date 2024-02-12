@@ -49,9 +49,15 @@ const servicesData = [
   },
 ];
 
-const Services = () => {
+const OurPromise = () => {
   return (
     <div className="bg-white w-full pb-[3rem]">
+      <div className="flex flex-col items-center py-[3rem]">
+        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
+          <span className="text-yellow-600">OUR</span> PROMISE
+        </h1>
+        <div className="md:h-[0.3rem] h-1 bg-black w-20 md:w-40 text-white"></div>
+      </div>
       <div className="bg-white h-full text-black md:mx-[8rem] mx-[2rem] rounded-sm">
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-center">
           {servicesData.map((service, index) => (
@@ -63,4 +69,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default OurPromise;

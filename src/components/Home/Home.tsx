@@ -4,9 +4,8 @@ import { useDispatch } from "react-redux";
 // Local Files
 import { updateTab } from "../../store/curTabSlice";
 import HeroSection from "./subComponents/HeroSection";
-import Achievement from "./subComponents/Achievement";
-import Services from "./subComponents/Services";
-import Description from "./subComponents/Description";
+import OurPromise from "./subComponents/OurPromise";
+import OurServices from "./subComponents/OurServices";
 import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
 import FlightBooking from "./subComponents/FlightBooking";
@@ -28,9 +27,8 @@ const Home = () => {
       <HeroSection />
       <FlightBooking />
       <WhyChooseUs />
-      <Description />
-      <Achievement />
-      <Services />
+      <OurServices />
+      <OurPromise />
       <Product />
       <Abovefoter />
     </div>
