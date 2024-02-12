@@ -5,8 +5,8 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import EmailForm from "./subElements/EmailForm";
 import Map from "./subElements/Map";
-import CTA from "./subElements/CTA";
 import ContactCard from "./subElements/ContactCard";
+import Subscribe from "../../globalSubComponents/Subscribe";
 const title = { des: "Contact Us" };
 
 const Contact = () => {
@@ -30,7 +30,7 @@ const Contact = () => {
         <EmailForm />
         <Map />
       </div>
-      <CTA text="Want To Book Flight ?" color="warning" showArrow={true} text2="Call Us Now !" to="../Contact" />
+      <Subscribe />
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { updateTab } from "../../store/curTabSlice";
 import Specialization from "./subComponents/Specialization";
 import Intro from "../../globalSubComponents/Intro";
 import Define from "./subComponents/Define";
+import Subscribe from "../../globalSubComponents/Subscribe";
 
 const About = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,7 @@ const About = () => {
       <Intro des={title.des} />
       <Specialization />
       <Define />
+      <Subscribe/>
     </div>
   );
 };
