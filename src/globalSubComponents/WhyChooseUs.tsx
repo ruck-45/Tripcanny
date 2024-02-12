@@ -23,9 +23,15 @@ const missionData = [
   },
 ];
 
-const Mission = () => {
+const WhyChooseUs = () => {
   return (
-    <div className="bg-yellow-400 h-auto w-full py-[2rem]">
+    <div className="bg-yellow-400 h-auto w-full py-[3rem] flex flex-col gap-[2rem]">
+      <div className="flex flex-col items-center">
+        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
+          <span className="text-white">WHY</span> CHOOSE US
+        </h1>
+        <div className="md:h-[0.3rem] h-1 bg-black w-20 md:w-40 text-white"></div>
+      </div>
       <div className="bg-white h-auto text-black md:mx-[6rem] mx-[2rem] drop-shadow-xl rounded-sm ">
         <div className="flex flex-col items-center justify-center p-[5rem]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12">
@@ -49,4 +55,4 @@ const Mission = () => {
   );
 };
 
-export default Mission;
+export default WhyChooseUs;
