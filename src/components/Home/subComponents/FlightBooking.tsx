@@ -28,15 +28,15 @@ const flightClass = [
 ];
 
 const FlightBooking = () => {
-  const [roundTrip, setRoundTrip] = useState(true);
+  const [roundTrip, setRoundTrip] = useState(false);
 
   return (
-    <div className="bg-white relative flex justify-center py-[5rem] md:py-0">
-      <div className="w-[80%] p-[3rem] bg-white rounded-xl drop-shadow-xl relative md:top-[-7rem] flex flex-col gap-[2rem]">
+    <div className="bg-white relative flex justify-center py-[1rem]">
+      <div className="w-[100%] sm:w-[80%] p-[3rem] bg-white rounded-xl md:drop-shadow-xl relative md:top-[-7rem] flex flex-col gap-[2rem]">
         <RadioGroup
           orientation="horizontal"
           color="danger"
-          defaultValue="round-trip"
+          defaultValue="one-way"
           classNames={{
             wrapper: "gap-[2rem]",
           }}
