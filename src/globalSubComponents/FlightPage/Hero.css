@@ -1,5 +1,5 @@
-.bg {
-  background-image: "./assets/fli.jpg";
+.Bg {
+  background-image: url("./assets/fli.jpg");
   background-repeat: inherit;
   background-position: center;
   background-size: cover;
