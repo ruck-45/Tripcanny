@@ -74,7 +74,7 @@ const NavBar = () => {
       <Navbar
         isMenuOpen={navOpenStatus}
         onMenuOpenChange={setIsMenuOpen}
-        className="py-[1.2rem] nav z-[200] bg-white h-[8rem] nav drop-shadow-lg"
+        className="py-[1.2rem] nav md:z-[200] bg-white h-[8rem] nav drop-shadow-lg"
         maxWidth="xl"
         isBordered
       >
@@ -122,7 +122,7 @@ const NavBar = () => {
                 curTab === "Last Minute Flights" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"
               }
             >
-              Refundable Wording
+              Refundable
             </Link>
           </NavbarItem>
           <NavbarItem>

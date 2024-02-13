@@ -3,7 +3,7 @@ import { updateTab } from "../store/curTabSlice";
 import Intro from "./Intro";
 import Subscribe from "./Subscribe";
 import "./LastMin.css";
-const title = { des: "Refundable Wording" };
+const title = { des: "Refundable" };
 const reasons1 = [
   "Sudden Illness / Injury (including Covid-19)",
   "Pre-existing Medical Condition",
