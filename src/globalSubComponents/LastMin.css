@@ -4,3 +4,10 @@
   background-position: center;
   background-size: cover;
 }
+
+.privacy {
+  background-image: url("../globalAssets/images/privacy.jpg");
+  background-repeat: inherit;
+  background-position: center;
+  background-size: cover;
+}
