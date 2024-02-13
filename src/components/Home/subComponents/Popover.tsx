@@ -1,5 +1,5 @@
 // Dependencies
-import { Modal, ModalContent, ModalHeader, ModalBody, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, Button, useDisclosure, Image } from "@nextui-org/react";
 import { useRef, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaPhone } from "react-icons/fa6";
@@ -10,6 +10,9 @@ import { MdAddIcCall } from "react-icons/md";
 import "./Popover.css";
 import { updatePopoverStatus } from "../../../store/popoverStatusSlice";
 import { RootState } from "../../../store/store";
+import logo from "../../../globalAssets/logo.svg";
+
+const popbtns = ["New Bookings", "Changes", "Cancellations", "Customer Service"];
 
 const Popover = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -33,25 +36,59 @@ const Popover = () => {
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden" placement="center">
         <a href="tel:+1 (888) 891-7176">
-          <ModalContent className="h-[75%] pop">
+          <ModalContent className="h-[100%]">
             <ModalHeader className="flex items-center gap-[1rem]">
-              <Button isIconOnly variant="solid" radius="full" className="text-[1rem]">
+              <Button isIconOnly variant="solid" radius="full" color="warning" className="text-[1rem]">
                 <FaPhone />
               </Button>
               <p>Contact Us</p>
             </ModalHeader>
-            <ModalBody className="flex flex-col justify-center items-center">
-              <h1 className="text-[3rem] leading-[2.2rem] font-bold font-['kalina'] text-center mb-[2rem]">
-                Tripcanny
+            <ModalBody className="flex flex-col justify-center items-center gap-[1.8rem] py-[1.5rem]">
+              <Image width={120} src={logo} alt="logo" radius="none" />
+              <h1 className="text-[1.5rem] leading-[2.2rem] text-center font-bold">24/7 Reservation & Support</h1>
+              <div className="grid grid-cols-2 gap-[0.5rem]">
+                {popbtns.map((data, index) => (
+                  <Button
+                    className="text-[1rem] font-bold font-serif bg-black border text-white self-center p-[1.5rem]"
+                    radius="full"
+                    key={index}
+                  >
+                    {data}
+                  </Button>
+                ))}
+              </div>
+
+              <div
+                className="w-[10rem] h-[10rem] rounded-full bg-no-repeat bg-center bg-cover border-black border-[0.2rem]"
+                style={{
+                  backgroundImage:
+                    "url(https://images.pexels.com/photos/7709235/pexels-photo-7709235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                }}
+              ></div>
+              <h1 className="text-[1.2rem] leading-[2.2rem] text-center font-semibold">
+                Call & Get Unpublished Flight Deals
               </h1>
-              <p className="font-bold mb-[2rem] text-[1.5rem]">More Info</p>
-              <BiSolidPhoneCall className="text-[5rem] " />
-              <p className="text-[#F5A524] font-bold text-[2rem]">Call us now</p>
-              <p className="text-center">
-                to speak live with a person on our team. we're committed to be there for our customers.
-              </p>
+
+              <Button
+                className="text-[1rem] font-bold bg-black border text-white self-center p-[1.5rem]"
+                radius="full"
+                startContent={<FaPhone />}
+              >
+                +1 (888) 891-7176
+              </Button>
+
+              <h1 className="text-[1.5rem] leading-[2.2rem] text-center font-bold">24/7 Helpline Available</h1>
+              <h1 className="text-[1.1rem] text-center leading-[1.2rem]">
+                Enter Your Number & We'll call you back within 5 seconds
+              </h1>
             </ModalBody>
-            <MdAddIcCall className="text-[3rem] mx-auto bg-[#F5A524] w-full p-[0.5rem]" />
+            <Button
+              className="text-[1rem] font-bold border text-white self-center py-[1.5rem] w-full"
+              color="warning"
+              startContent={<FaPhone />}
+            >
+              +1 (888) 891-7176
+            </Button>
           </ModalContent>
         </a>
       </Modal>
