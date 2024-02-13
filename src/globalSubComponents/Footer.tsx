@@ -2,25 +2,6 @@
 import { Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-const SITEMAP = [
-  {
-    title: "Flights",
-    links: ["Book Flights", "Flight Status", "Flight Deals", "Manage Booking"],
-  },
-  {
-    title: "Destinations",
-    links: ["Destination Guides", "Travel Tips", "Travel Blog"],
-  },
-  {
-    title: "About Us",
-    links: ["About Tripcanny", "Blog", "Press Room", "Careers"],
-  },
-  {
-    title: "Contact",
-    links: ["Customer Support", "Partner with Us", "Privacy Policy"],
-  },
-];
-
 const airlines = [
   "Alaska Airline",
   "Virgin America",
@@ -90,6 +71,25 @@ const routes = [
   "Newark To Las Vegas",
 ];
 
+const quickLinks = [
+  { name: "Book Flights", to: "" },
+  { name: "Flight Status", to: "" },
+  { name: "Flight Deals", to: "" },
+  { name: "Manage Booking", to: "" },
+  { name: "Destination Guides", to: "" },
+  { name: "Travel Tips", to: "" },
+  { name: "Travel Blog", to: "" },
+  { name: "Best Price Guarantee", to: "" },
+  { name: "FAQ'S", to: "" },
+  { name: "First Class Flights", to: "" },
+  { name: "Business Class Flights", to: "" },
+  { name: "About Tripcanny", to: "../About" },
+  { name: "Privacy Policy", to: "./Privacy" },
+  { name: "Contact Us", to: "./Contact" },
+  { name: "Refundable", to: "./LastMinuteFlights" },
+  { name: "Disclaimer", to: "./Disclaimer" },
+];
+
 const Footer = () => {
   return (
     <>
@@ -141,27 +141,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mx-auto grid w-full grid-cols-1 text-white gap-8 py-12 md:grid-cols-2 lg:grid-cols-4  border-t">
-            {SITEMAP.map(({ title, links }, key) => (
-              <div key={key} className="w-full">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-4 font-bold md:text-2xl text-1xl uppercase opacity-50"
-                  placeholder={undefined}
-                >
-                  {title}
-                </Typography>
-                <ul className="space-y-1">
-                  {links.map((link, key) => (
-                    <Typography key={key} as="li" className="font-normal" placeholder={undefined}>
-                      <Link to={`${link === "Privacy Policy" ? "/Privacy" : ""}`}>{link}</Link>
-                    </Typography>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="text-white py-[2rem] flex flex-col gap-[1rem] border-t">
+            <h1 className="font-bold opacity-50 text-2xl">Quick Links :</h1>
+            <div className="grid grid-cols-2 md:grid-cols-4">
+              {quickLinks.map((data, index) => (
+                <Link key={data.name} to={data.to} className="cursor-pointer hover:translate-x-0.5 transition">
+                  {data.name}
+                </Link>
+              ))}
+            </div>
           </div>
+
           <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4  ">
             <div className="flex gap-4 text-blue-gray-900 sm:justify-center text-white">
               <Typography
