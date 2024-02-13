@@ -34,7 +34,6 @@ const Home = () => {
       <Dine />
       <Call />
       <BookAFlight />
-      <Map />
     </div>
   );
 };
