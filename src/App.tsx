@@ -12,6 +12,7 @@ import { RootState } from "./store/store";
 import Contact from "./components/Contact/Contact";
 import { Privacy } from "./globalSubComponents/Privacy";
 import LastMinuteFlights from "./globalSubComponents/LastMinuteFlights";
+import Page from "./globalSubComponents/FlightPage/Page";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/LastMinuteFlights" element={<LastMinuteFlights />} />
+        <Route path="/flight" element={<Page />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
       {curTab === "Auth" ? null : <Footer />}

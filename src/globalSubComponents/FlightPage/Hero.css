@@ -1,0 +1,6 @@
+.bg {
+  background-image: "./assets/fli.jpg";
+  background-repeat: inherit;
+  background-position: center;
+  background-size: cover;
+}
