@@ -46,7 +46,6 @@ const NavBar = () => {
         className="h-[3rem] py-[1.2rem] nav z-[200] bg-yellow-400 justify-center hidden lg:flex"
         maxWidth="xl"
         isBordered
-        shouldHideOnScroll
       >
         <NavbarContent className="hidden lg:flex" justify="center">
           <NavbarItem>
@@ -75,7 +74,7 @@ const NavBar = () => {
       <Navbar
         isMenuOpen={navOpenStatus}
         onMenuOpenChange={setIsMenuOpen}
-        className=" bg-white h-[8rem] nav drop-shadow-lg"
+        className="py-[1.2rem] nav md:z-[200] bg-white h-[8rem] nav drop-shadow-lg"
         maxWidth="xl"
         isBordered
       >
@@ -123,7 +122,7 @@ const NavBar = () => {
                 curTab === "Last Minute Flights" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"
               }
             >
-              Last Minute
+              Refundable
             </Link>
           </NavbarItem>
           <NavbarItem>

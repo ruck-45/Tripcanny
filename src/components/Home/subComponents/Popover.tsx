@@ -34,22 +34,22 @@ const Popover = () => {
       <Button onPress={onOpen} className="hidden" ref={PopoverButton}>
         Open Modal
       </Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden" placement="center">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden zscale" placement="center">
         <a href="tel:+1 (888) 891-7176">
-          <ModalContent className="h-[100%]">
-            <ModalHeader className="flex items-center gap-[1rem]">
+          <ModalContent className="h-auto">
+            <ModalHeader className="flex items-center gap-[0.4rem]">
               <Button isIconOnly variant="solid" radius="full" color="warning" className="text-[1rem]">
                 <FaPhone />
               </Button>
               <p>Contact Us</p>
             </ModalHeader>
-            <ModalBody className="flex flex-col justify-center items-center gap-[1.8rem] py-[1.5rem]">
-              <Image width={120} src={logo} alt="logo" radius="none" />
+            <ModalBody className="flex flex-col justify-center items-center  py-[1rem]">
+              <Image width={100} src={logo} alt="logo" radius="none" />
               <h1 className="text-[1.5rem] leading-[2.2rem] text-center font-bold">24/7 Reservation & Support</h1>
               <div className="grid grid-cols-2 gap-[0.5rem]">
                 {popbtns.map((data, index) => (
                   <Button
-                    className="text-[1rem] font-bold font-serif bg-black border text-white self-center p-[1.5rem]"
+                    className="text-[1rem] font-bold font-serif bg-black border text-white self-center p-[1rem]"
                     radius="full"
                     key={index}
                   >
@@ -70,7 +70,7 @@ const Popover = () => {
               </h1>
 
               <Button
-                className="text-[1rem] font-bold bg-black border text-white self-center p-[1.5rem]"
+                className="text-[1rem] font-bold bg-black border text-white self-center px-[1.5rem] py-[1rem]"
                 radius="full"
                 startContent={<FaPhone />}
               >
