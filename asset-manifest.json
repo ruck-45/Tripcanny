@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.99ebaeb4.css",
-    "main.js": "/static/js/main.cc61a941.js",
+    "main.css": "/static/css/main.17ea58b2.css",
+    "main.js": "/static/js/main.8dad64e7.js",
+    "static/media/fli.jpg": "/static/media/fli.0b1bcd99df059a7f803c.jpg",
     "static/media/random.jpg": "/static/media/random.91eebe510669d2ab7d8a.jpg",
+    "static/media/business.jpg": "/static/media/business.e86e528e7cb059fda161.jpg",
     "static/media/2151205393.jpg": "/static/media/2151205393.a399e26c139ea4ab0d49.jpg",
     "static/media/lug.jpg": "/static/media/lug.e066fbe8f3b06dfcb2dd.jpg",
+    "static/media/lin.jpg": "/static/media/lin.f70f294a6adb366f0934.jpg",
     "static/media/bag (1).jpg": "/static/media/bag (1).e3cbf9f6b8b1e0773ebf.jpg",
     "static/media/travelContact.jpg": "/static/media/travelContact.7408ab5402f2001f3df7.jpg",
     "static/media/lastMinute.jpg": "/static/media/lastMinute.211564788bfc70a13d1e.jpg",
@@ -12,11 +15,11 @@
     "static/media/cus.jpg": "/static/media/cus.b5c754f9d3579423b8a3.jpg",
     "static/media/logo.svg": "/static/media/logo.71fb1d362c381fa7feb1ca8a14826249.svg",
     "index.html": "/index.html",
-    "main.99ebaeb4.css.map": "/static/css/main.99ebaeb4.css.map",
-    "main.cc61a941.js.map": "/static/js/main.cc61a941.js.map"
+    "main.17ea58b2.css.map": "/static/css/main.17ea58b2.css.map",
+    "main.8dad64e7.js.map": "/static/js/main.8dad64e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.99ebaeb4.css",
-    "static/js/main.cc61a941.js"
+    "static/css/main.17ea58b2.css",
+    "static/js/main.8dad64e7.js"
   ]
 }
