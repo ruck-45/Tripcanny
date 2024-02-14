@@ -28,7 +28,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/LastMinuteFlights" element={<LastMinuteFlights />} />
-        <Route path="/flight" element={<Page />} />
+        <Route path="/flight/:name" element={<Page />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
       {curTab === "Auth" ? null : <Footer />}

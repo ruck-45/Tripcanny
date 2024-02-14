@@ -1,11 +1,11 @@
 import React from "react";
 import "./Hero.css"
-import FlightBooking from "../../components/Home/subComponents/FlightBooking";
+import FlightBook from "./FlightBook";
 
 const Hero = () => {
   return (
     <div className="Bg xl:h-[45rem] h-auto ">
-     <FlightBooking/>
+     <FlightBook/>
     </div>
   );
 };
