@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { value: "" };
+const initialState = { value: "",
+                          data:"" 
+                     };
 
 const curTabSlice = createSlice({
   name: "curTab",
@@ -9,6 +11,9 @@ const curTabSlice = createSlice({
     updateTab: (state, action) => {
       state.value = action.payload;
     },
+    fetchData:(state,action)=>{
+      state.value = action.payload
+    }
   },
 });
 

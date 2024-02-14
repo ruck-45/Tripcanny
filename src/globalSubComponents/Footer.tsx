@@ -1,6 +1,6 @@
 // Dependencies
 import { Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const airlines = [
   "Alaska Airline",
@@ -91,6 +91,7 @@ const quickLinks = [
 ];
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <footer className="flex flex-col items-center">
@@ -112,7 +113,11 @@ const Footer = () => {
             <h1 className="font-bold opacity-50 text-2xl">Top Airlines :</h1>
             <div className="grid grid-cols-2 md:grid-cols-4">
               {airlines.map((data, index) => (
-                <li key={data} className="cursor-pointer hover:translate-x-0.5 transition">
+                <li
+                  key={data}
+                  onClick={() => navigate(`/flight/${data}`, { state: {type:"airlines"} })}
+                  className="cursor-pointer hover:translate-x-0.5 transition"
+                >
                   {data}
                 </li>
               ))}
