@@ -5,11 +5,8 @@ import bus from "./assets/business.jpg"
 const Details = ({title, description,businessDes}) => {
   return (
     <>
-      <div className="flex flex-col justify-between items-center bg-white h-auto p-[2rem]">
-        <div className="p-[2rem]">
-          <h1 className="md:text-5xl text-3xl font-bold font-serif">{title}</h1>
-          <div className="h-[0.2rem] lg:w-[25rem] w-[15rem] bg-yellow-600"></div>
-        </div>
+      <div className="flex flex-col justify-between items-center bg-white h-auto p-[3rem]">
+        
 
         <div className="flex lg:flex-row flex-col justify-center items-center h-auto ">
           <div className="p-[2rem] bg-center bg-cover md:block hidden">

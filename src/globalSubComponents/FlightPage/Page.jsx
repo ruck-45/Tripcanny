@@ -32,7 +32,7 @@ const Page = () => {
     }
       return (
         <div>
-          <Hero />
+          {details.map((e,i) => (<Hero key={i} title={e.Airline}/>))}
           {details.map((e,i)=>(<Details key={i} title={e.Airline} description={e.description} businessDes={e.ClassDes} />))}
         </div>
       );
