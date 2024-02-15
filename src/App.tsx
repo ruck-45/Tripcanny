@@ -13,6 +13,7 @@ import Contact from "./components/Contact/Contact";
 import { Privacy } from "./globalSubComponents/Privacy";
 import LastMinuteFlights from "./globalSubComponents/LastMinuteFlights";
 import Page from "./globalSubComponents/FlightPage/Page";
+import Page from "./globalSubComponents/FlightPage/Page";
 import { Disclaimer } from "./globalSubComponents/Disclaimer";
 import RegionFlights from "./globalSubComponents/FlightPage/RegionFlights";
 
