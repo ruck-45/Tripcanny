@@ -115,7 +115,7 @@ const Footer = () => {
               {airlines.map((data, index) => (
                 <li
                   key={data}
-                  onClick={() => navigate(`/flight/${data}`, { state: {type:"airlines"} })}
+                  onClick={() => navigate(`/flight/${data}`, { state: { type: "airlines" } })}
                   className="cursor-pointer hover:translate-x-0.5 transition"
                 >
                   {data}
@@ -128,7 +128,11 @@ const Footer = () => {
             <h1 className="font-bold opacity-50 text-2xl">Top Destinations :</h1>
             <div className="grid grid-cols-2 md:grid-cols-4">
               {destinations.map((data, index) => (
-                <li key={data} className="cursor-pointer hover:translate-x-0.5 transition">
+                <li
+                  key={data}
+                  onClick={() => navigate(`/destination/${data}`, { state: { type: "place" } })}
+                  className="cursor-pointer hover:translate-x-0.5 transition"
+                >
                   {data}
                 </li>
               ))}

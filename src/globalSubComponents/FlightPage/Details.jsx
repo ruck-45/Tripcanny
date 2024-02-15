@@ -9,7 +9,7 @@ const Details = ({title, description,businessDes}) => {
         
 
         <div className="flex lg:flex-row flex-col justify-center items-center h-auto ">
-          <div className="p-[2rem] bg-center bg-cover md:block hidden">
+          <div className="p-[2rem] bg-center bg-cover lg:block hidden">
             <img className=" bg-center bg-cover" src={lin} alt="" />
           </div>
           <div>
@@ -25,7 +25,7 @@ const Details = ({title, description,businessDes}) => {
               {businessDes}
             </p>
           </div>
-          <div className="p-[2rem] bg-center bg-cover md:block hidden">
+          <div className="p-[2rem] bg-center bg-cover lg:block hidden">
             <img className=" bg-center bg-cover" src={bus} alt="" />
           </div>
         </div>

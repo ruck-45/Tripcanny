@@ -14,6 +14,7 @@ import { Privacy } from "./globalSubComponents/Privacy";
 import LastMinuteFlights from "./globalSubComponents/LastMinuteFlights";
 import Page from "./globalSubComponents/FlightPage/Page";
 import { Disclaimer } from "./globalSubComponents/Disclaimer";
+import RegionFlights from "./globalSubComponents/FlightPage/RegionFlights";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/LastMinuteFlights" element={<LastMinuteFlights />} />
         <Route path="/flight/:name" element={<Page />} />
+        <Route path="/destination/:place" element={<RegionFlights />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
       {curTab === "Auth" ? null : <Footer />}
