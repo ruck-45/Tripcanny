@@ -117,10 +117,8 @@ const NavBar = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              to="../LastMinuteFlights"
-              className={
-                curTab === "Last Minute Flights" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"
-              }
+              to="../Refund"
+              className={curTab === "Refund" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
             >
               Refundable
             </Link>
