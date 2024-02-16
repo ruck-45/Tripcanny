@@ -86,7 +86,7 @@ const quickLinks = [
   { name: "About Tripcanny", to: "../About" },
   { name: "Privacy Policy", to: "./Privacy" },
   { name: "Contact Us", to: "./Contact" },
-  { name: "Refund Policy", to: "./LastMinuteFlights" },
+  { name: "Refund Policy", to: "./Refund" },
   { name: "Disclaimer", to: "./Disclaimer" },
 ];
 
