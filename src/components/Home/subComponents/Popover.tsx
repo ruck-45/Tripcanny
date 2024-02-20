@@ -32,24 +32,9 @@ const Popover = () => {
       <Button onPress={onOpen} className="hidden" ref={PopoverButton}>
         Open Modal
       </Button>
-      <Modal
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        className="sm:hidden zscale"
-        placement="center"
-        size="full"
-        classNames={{
-          wrapper: "wrapper-classes", // main modal wrapper
-          backdrop: "backdrop-classes",
-          base: "base-classes", // modal content wrapper
-          header: "header-classes", // modal header
-          body: "body-classes", // modal body
-          footer: "footer-classes", // modal footer
-          closeButton: "close-button-classes", // modal close button
-        }}
-      >
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden zscale" placement="center" size="full">
         <a href="tel:+1 (888) 891-7176">
-          <ModalContent className="min-h-[100vh]">
+          <ModalContent className="min-h-[95vh] max-h-[95vh]">
             <ModalHeader className="flex items-center gap-[0.4rem]">
               <Button isIconOnly variant="solid" radius="full" color="warning" className="text-[1rem]">
                 <FaPhone />
