@@ -32,17 +32,31 @@ const Popover = () => {
       <Button onPress={onOpen} className="hidden" ref={PopoverButton}>
         Open Modal
       </Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden zscale" placement="center">
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        className="sm:hidden zscale"
+        placement="center"
+        size="full"
+        classNames={{
+          wrapper: "wrapper-classes", // main modal wrapper
+          backdrop: "backdrop-classes",
+          base: "base-classes", // modal content wrapper
+          header: "header-classes", // modal header
+          body: "body-classes", // modal body
+          footer: "footer-classes", // modal footer
+          closeButton: "close-button-classes", // modal close button
+        }}
+      >
         <a href="tel:+1 (888) 891-7176">
-          <ModalContent className="h-auto">
+          <ModalContent className="min-h-[100vh]">
             <ModalHeader className="flex items-center gap-[0.4rem]">
               <Button isIconOnly variant="solid" radius="full" color="warning" className="text-[1rem]">
                 <FaPhone />
               </Button>
               <p>Contact Us</p>
             </ModalHeader>
-            <ModalBody className="flex flex-col justify-center items-center  py-[1rem]">
-              <Image width={50} src={logo} alt="logo" radius="none" />
+            <ModalBody className="flex flex-col justify-evenly items-center  py-[1rem]">
               <h1 className="text-[1.3rem] leading-[2.2rem] text-center font-bold">24/7 Reservation & Support</h1>
               <div className="grid grid-cols-2 gap-[0.5rem]">
                 {popbtns.map((data, index) => (
@@ -57,7 +71,7 @@ const Popover = () => {
               </div>
 
               <div
-                className="w-[7rem] h-[7rem] rounded-full bg-no-repeat bg-center bg-cover border-black border-[0.2rem]"
+                className="w-[10rem] h-[10rem] rounded-full bg-no-repeat bg-center bg-cover border-black border-[0.2rem]"
                 style={{
                   backgroundImage:
                     "url(https://images.pexels.com/photos/7709235/pexels-photo-7709235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
