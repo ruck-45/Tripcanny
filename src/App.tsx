@@ -11,7 +11,7 @@ import Footer from "./globalSubComponents/Footer";
 import { RootState } from "./store/store";
 import Contact from "./components/Contact/Contact";
 import { Privacy } from "./globalSubComponents/Privacy";
-import LastMinuteFlights from "./globalSubComponents/LastMinuteFlights";
+import Refund from "./globalSubComponents/Refund";
 import Page from "./globalSubComponents/FlightPage/Page";
 import { Disclaimer } from "./globalSubComponents/Disclaimer";
 import RegionFlights from "./globalSubComponents/FlightPage/RegionFlights";
@@ -30,7 +30,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/Disclaimer" element={<Disclaimer />} />
-        <Route path="/LastMinuteFlights" element={<LastMinuteFlights />} />
+        <Route path="/Refund" element={<Refund />} />
         <Route path="/flight/:name" element={<Page />} />
         <Route path="/destination/:place" element={<RegionFlights />} />
         <Route path="*" element={<Navigate to="/Home" />} />
