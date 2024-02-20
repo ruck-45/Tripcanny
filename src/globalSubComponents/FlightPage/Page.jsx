@@ -1,11 +1,10 @@
-import React from "react";
 import Hero from "./Hero";
 import Details from "./Details";
-import { useLocation } from "react-router";
 import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import { useParams } from "react-router-dom";
 import airlineData from "./data/Airline.json";
+import Popover from "../../components/Home/subComponents/Popover";
 
 const Page = () => {
   const dispatch = useDispatch();
@@ -16,18 +15,15 @@ const Page = () => {
     behavior: "smooth",
   });
   let details = {};
-  const location = useLocation();
   const params = useParams();
-
-  const contentType = location.state.type;
 
   const name = params.name.replace(/-/g, " ");
 
-  if (contentType === "airlines") {
-    details = airlineData.filter((filterData) => filterData.Airline === name);
-  }
+  details = airlineData.filter((filterData) => filterData.Airline === name);
+
   return (
     <div>
+      <Popover />
       {details.map((e, i) => (
         <Hero key={i} title={e.Airline} />
       ))}
