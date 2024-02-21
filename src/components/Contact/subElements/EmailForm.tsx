@@ -28,12 +28,15 @@ const EmailForm = () => {
     setState(true);
     try {
       if (!emailValidity && userNameState > 0 && emailState > 0) {
-        await emailjs.sendForm(
+        console.log(form.current);
+        const response = await emailjs.sendForm(
           `${process.env.REACT_APP_SERVICE_ID}`,
           `${process.env.REACT_APP_TEMPLATE_ID}`,
           form.current!,
           `${process.env.REACT_APP_PUBLIC_KEY}`
         );
+
+        console.log(response);
         emailSent();
         setState(false);
       } else {
@@ -67,9 +70,10 @@ const EmailForm = () => {
         <div className="flex gap-[1rem] w-full">
           <Input
             type="text"
-            label="Name"
-            variant="bordered"
             color="warning"
+            classNames={{ input: "text-black" }}
+            label="Your Name"
+            variant="bordered"
             name="name"
             radius="none"
             onChange={(event) => setUserNameState(event.currentTarget.value.length)}
@@ -78,31 +82,49 @@ const EmailForm = () => {
           />
           <Input
             type="email"
-            label="Email"
-            name="email"
-            variant="bordered"
             color="warning"
+            classNames={{ input: "text-black" }}
+            label="Email"
+            variant="bordered"
+            name="email"
             radius="none"
             onChange={checkEmail}
             isInvalid={emailValidity}
             errorMessage={emailValidity ? "Please enter a valid Email" : ""}
           />
         </div>
-        <Input type="text" label="Subject" variant="bordered" color="warning" name="subject" radius="none" />
-        <Textarea label="Message" name="message" variant="bordered" color="warning" radius="none" />
-        <Button
+        <Input
+          type="text"
           color="warning"
+          classNames={{ input: "text-black" }}
+          label="Subject"
+          variant="bordered"
+          name="subject"
+          radius="none"
+        />
+        <Textarea
+          label="Message"
+          name="message"
+          variant="bordered"
+          color="warning"
+          classNames={{ input: "text-black" }}
+          radius="none"
+        />
+        <Button
           variant="shadow"
           radius="none"
-          className="w-[10rem] text-white"
+          color="warning"
+          className="w-[12rem] h-[3rem]  text-white"
           endContent={<IoSend className="mt-[0.2rem]" />}
           onClick={sendEmail}
           isLoading={state}
         >
-          Send Message
+          Send
         </Button>
         <Toaster />
       </form>
+
+      {/* <form className="flex flex-col gap-[1rem] items-start w-[100%] grow" ref={form} onSubmit={sendEmail}></form> */}
     </div>
   );
 };
